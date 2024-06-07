@@ -36,7 +36,7 @@ Backend: C# / Frontend: React/Html/Css/Js / Database: SQL Server
 
 Swagger Documentation was Used to Help C# ASP.NET Core on the Backend Side. 
 
-Debug/Information/Warning/Danger Logs are kept in the LogFile Folder.
+Debug / Information / Warning / Danger Logs are kept in the LogFile Folder.
 
 When you create a new user, your password is encrypted with the SHA256 encryption function and written to the database. SHA256 cannot be decoded, so it is impossible to crack the password.
 
