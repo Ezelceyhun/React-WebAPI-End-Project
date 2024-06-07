@@ -6,7 +6,7 @@ Backend: C#  /  Frontend: React/Html/Css/Js  /  Veritabanı: SQL Server
 
 Backend Tarafında C# ASP.NET Core'a Yardımcı Olması İçin Swagger Dökümantasyonu Kullanılmıştır. 
 
-Debug/Information/Warning/Danger Logları LogFile Klasöründe tutulmaktadır.
+Debug / Information / Warning / Danger Logları LogFile Klasöründe tutulmaktadır.
 
 Yeni Kullanıcı Oluşturduğunuzda Şifreniz SHA256 Şifrelemen Fonksiyonu İle Şifrelenerek Veritabanına Yazılır. SHA256 Decode Edilemez, Bu Sayede Şifreyi Kırmak İmkansızdır.
 
