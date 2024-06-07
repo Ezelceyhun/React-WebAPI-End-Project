@@ -1,0 +1,33 @@
+.kutuUser
+{    
+    margin-top: 8px;   
+}
+.kutuUser input
+{
+    margin-top: 8px;
+    border-radius: 10px;
+    height: 27px;
+    width: 200px;
+}
+.kutuUser label
+{
+    font-size: 15px;
+    font-weight: bold;
+}
+.createuser
+{
+    border-radius: 10px;
+    background-color: lightgrey;
+    height:280px;
+    padding-top: 10px;
+    width: 400px;
+    margin: auto;
+}
+body
+{
+    background-color: #F5F5F7;
+}
+table
+{
+    background-color: #F5F5F7;
+}

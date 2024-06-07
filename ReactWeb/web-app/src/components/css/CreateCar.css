@@ -1,0 +1,46 @@
+.kutuCarCreate
+{   
+    margin-top: 8px;
+}
+.kutuCarCreate input
+{
+    border-radius: 10px;
+    height: 27px;
+    width: 250px;
+    background-color: #F5F5F7;
+}
+.kutuCarCreate label
+{
+    font-size: 15px;
+    font-weight: bold;
+}
+.createcar
+{
+    margin-top: 10px;
+    border-radius: 10px;
+    background-color: lightgrey;
+    height:270px;
+    width: 430px;
+    margin: auto;
+}
+.uyariLabel
+{
+    color: #D60c0c;
+    animation: blinker 1s linear infinite;
+}
+@keyframes blinker {
+    50% { opacity: 0; }
+}
+.GeriDonButtonCreateCar
+{
+    margin: auto;
+}
+.GeriDonButtonBackGroundCreateCar
+{
+    background-color: #101828;
+    height: 50px;
+    width: 300px;
+    margin: auto;
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+}

@@ -1,0 +1,13 @@
+.GeriDonButtonBack
+{
+    background-color: #101828;
+    height: 50px;
+    width: 300px;
+    margin: auto;
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+}
+.GeriDon
+{
+    margin: auto;
+}

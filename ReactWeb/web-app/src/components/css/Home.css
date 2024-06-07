@@ -1,0 +1,157 @@
+.sayfaBaslik{
+    background-color: #101828;
+    height: 40px;
+    width: 800px;
+    margin: auto;
+    margin-top: -25px;
+    border-bottom-left-radius:80px;
+    border-bottom-right-radius: 80px;
+    text-align: center;
+    margin-bottom: 100px;
+}
+.tableClass{
+    height: 100%;
+    width: 100%;
+}
+.Table{
+    border-collapse: collapse;
+    background-color: #F5F5F7;
+}
+.Table tr, Table td{
+    border: 1px solid #bbb;
+    padding: 10px 20px;
+}
+.Table th{
+    background-color: #21A7D7;
+    color: #fff;
+    font-weight: 600;
+}
+.NotPriceColor
+{
+    color:wheat;
+    height: 50px;
+    width: 100px;
+    font-size: 21px;
+    font-weight: bold;
+    border: 0px;
+    background-color: #21A7D7;
+    border-radius: 10px;
+}
+.NotPriceColor:hover
+{
+    color: white;
+    background-color: #696969;
+}
+.PriceColor
+{
+    font-weight: bold;
+    color: green;
+}
+.createbutton
+{    
+    width: 100px;
+    height: 42px;
+    border-radius: 10px;
+    color: whitesmoke;
+    background-color: #21A7D7;
+    border: 0px solid black;
+}
+.createbutton:hover
+{
+    color: #21A7D7;
+    background-color:lightgray;
+}
+.createCarbutton
+{
+    
+    margin-left: 5px;
+    width: 100px;
+    height: 42px;
+    border-radius: 10px;
+    color: whitesmoke;
+    background-color: #21A7D7;
+    border: 0px solid black;
+}
+.createCarbutton:hover
+{
+    color: #21A7D7;
+    background-color:lightgray;
+}
+.updateCarbutton
+{
+    width: 100px;
+    height: 42px;
+    border-radius: 10px;
+    color: whitesmoke;
+    background-color: #21A7D7;
+    border: 0px solid black;
+}
+.updateCarbutton:hover
+{
+    color: #21A7D7;
+    background-color:lightgray;
+}
+.addCarbutton
+{
+    float: left;        
+    width: 80px;
+    height: 42px;
+    border-radius: 10px;
+    color: whitesmoke;
+    background-color: #21A7D7;
+    border: 0px solid black;
+    margin-top: 10px;
+}
+.addCarbutton:hover
+{
+    color: #21A7D7;
+    background-color:lightgray;
+}
+.updateUserbutton
+{
+    float: left;        
+    width: 80px;
+    height: 42px;
+    border-radius: 10px;
+    color: whitesmoke;
+    background-color: #21A7D7;
+    border: 0px solid black;
+}
+.updateUserbutton:hover
+{
+    color: #21A7D7;
+    background-color:lightgray;
+}
+.oturumbuton 
+{
+    margin-left: 5px;
+    width: 110px;
+    height: 42px;
+    border-radius: 10px;
+    color: whitesmoke;
+    background-color: #21A7D7;
+    border: 0px solid black;
+}
+.oturumbuton:hover
+{
+    color: #21A7D7;
+    background-color:lightgray;
+}
+.h1Label
+{    
+    text-transform: uppercase;
+    font-size: 21px;
+    color: #F5F5F7;
+}
+.buttons
+{
+    margin: auto;
+    margin-top: -5px;
+    width: 400px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    background-color: #101828;
+    margin-bottom: 100px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}

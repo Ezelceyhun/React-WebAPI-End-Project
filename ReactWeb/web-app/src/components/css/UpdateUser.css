@@ -1,0 +1,54 @@
+.updateuser
+{
+    margin: auto;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    padding-right: 20px;
+    background-color: lightblue;
+    width: 800px;
+    height: 100%;
+    border-radius: 10px;
+    text-align: center;
+}
+.kutu
+{
+    margin: auto;
+}
+.kutu label
+{
+    float: left;
+}
+.kutu input
+{
+    width: 400px;
+    height: 25px;
+}
+button
+{
+    border-radius: 10px;
+    margin-top: 10px;
+    height: 40px;
+    width: 90px;
+    background-color: #21A7D7;
+    color: whitesmoke;
+    border: 1px;
+}
+button:hover
+{
+    background-color:cadetblue;
+    color: black;
+}
+.GeriDonButtonUser
+{
+    background-color: #101828;
+    height: 50px;
+    width: 300px;
+    margin: auto;
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+}
+.GeriDonUser
+{
+    margin: auto;
+}

@@ -1,0 +1,32 @@
+.Table
+{
+    margin: auto;
+    margin-top: 50px;
+}
+.albuton
+{
+    width: 70px;
+    height: 30px;
+    border: 0px;
+    border-radius: 10px;
+    color: whitesmoke;
+    background-color: #21A7D7;
+}
+.albuton button:hover
+{
+    color: #21A7D7;
+    background-color:lightgray;
+}
+.GeriDonAddCar
+{
+    background-color: #101828;
+    height: 50px;
+    width: 300px;
+    margin: auto;
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+}
+.GeriDonButtonAddCar
+{
+    margin: auto;
+}
