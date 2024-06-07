@@ -1,0 +1,17 @@
+C:\Users\ezelc\Desktop\ASPNETswagger\CustomerUserDataAccess2\bin\Debug\net8.0\CustomerUserDataAccess2.deps.json
+C:\Users\ezelc\Desktop\ASPNETswagger\CustomerUserDataAccess2\bin\Debug\net8.0\CustomerUserDataAccess2.dll
+C:\Users\ezelc\Desktop\ASPNETswagger\CustomerUserDataAccess2\bin\Debug\net8.0\CustomerUserDataAccess2.pdb
+C:\Users\ezelc\Desktop\ASPNETswagger\CustomerUserDataAccess2\bin\Debug\net8.0\UserEntities2.dll
+C:\Users\ezelc\Desktop\ASPNETswagger\CustomerUserDataAccess2\bin\Debug\net8.0\UserEntities2.pdb
+C:\Users\ezelc\Desktop\ASPNETswagger\CustomerUserDataAccess2\obj\Debug\net8.0\CustomerUserDataAccess2.csproj.AssemblyReference.cache
+C:\Users\ezelc\Desktop\ASPNETswagger\CustomerUserDataAccess2\obj\Debug\net8.0\CustomerUserDataAccess2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ezelc\Desktop\ASPNETswagger\CustomerUserDataAccess2\obj\Debug\net8.0\CustomerUserDataAccess2.AssemblyInfoInputs.cache
+C:\Users\ezelc\Desktop\ASPNETswagger\CustomerUserDataAccess2\obj\Debug\net8.0\CustomerUserDataAccess2.AssemblyInfo.cs
+C:\Users\ezelc\Desktop\ASPNETswagger\CustomerUserDataAccess2\obj\Debug\net8.0\CustomerUserDataAccess2.csproj.CoreCompileInputs.cache
+C:\Users\ezelc\Desktop\ASPNETswagger\CustomerUserDataAccess2\obj\Debug\net8.0\Customer.54D094E2.Up2Date
+C:\Users\ezelc\Desktop\ASPNETswagger\CustomerUserDataAccess2\obj\Debug\net8.0\CustomerUserDataAccess2.dll
+C:\Users\ezelc\Desktop\ASPNETswagger\CustomerUserDataAccess2\obj\Debug\net8.0\refint\CustomerUserDataAccess2.dll
+C:\Users\ezelc\Desktop\ASPNETswagger\CustomerUserDataAccess2\obj\Debug\net8.0\CustomerUserDataAccess2.pdb
+C:\Users\ezelc\Desktop\ASPNETswagger\CustomerUserDataAccess2\obj\Debug\net8.0\ref\CustomerUserDataAccess2.dll
+C:\Users\ezelc\Desktop\ASPNETswagger\CustomerUserDataAccess2\bin\Debug\net8.0\SHACrypto.dll
+C:\Users\ezelc\Desktop\ASPNETswagger\CustomerUserDataAccess2\bin\Debug\net8.0\SHACrypto.pdb

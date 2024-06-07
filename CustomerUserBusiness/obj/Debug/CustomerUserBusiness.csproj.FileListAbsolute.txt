@@ -1,0 +1,9 @@
+C:\Users\ezelc\Desktop\ASPNETswagger\CustomerUserBusiness\bin\Debug\CustomerUserBusiness.dll
+C:\Users\ezelc\Desktop\ASPNETswagger\CustomerUserBusiness\bin\Debug\CustomerUserBusiness.pdb
+C:\Users\ezelc\Desktop\ASPNETswagger\CustomerUserBusiness\bin\Debug\UserEntities.dll
+C:\Users\ezelc\Desktop\ASPNETswagger\CustomerUserBusiness\bin\Debug\UserEntities.pdb
+C:\Users\ezelc\Desktop\ASPNETswagger\CustomerUserBusiness\obj\Debug\CustomerUserBusiness.csproj.AssemblyReference.cache
+C:\Users\ezelc\Desktop\ASPNETswagger\CustomerUserBusiness\obj\Debug\CustomerUserBusiness.csproj.CoreCompileInputs.cache
+C:\Users\ezelc\Desktop\ASPNETswagger\CustomerUserBusiness\obj\Debug\Customer.C75DD9AA.Up2Date
+C:\Users\ezelc\Desktop\ASPNETswagger\CustomerUserBusiness\obj\Debug\CustomerUserBusiness.dll
+C:\Users\ezelc\Desktop\ASPNETswagger\CustomerUserBusiness\obj\Debug\CustomerUserBusiness.pdb

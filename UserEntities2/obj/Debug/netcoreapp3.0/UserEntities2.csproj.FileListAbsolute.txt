@@ -1,0 +1,4 @@
+C:\Users\ezelc\Desktop\ASPNETswagger\UserEntities2\obj\Debug\netcoreapp3.0\UserEntities2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ezelc\Desktop\ASPNETswagger\UserEntities2\obj\Debug\netcoreapp3.0\UserEntities2.AssemblyInfoInputs.cache
+C:\Users\ezelc\Desktop\ASPNETswagger\UserEntities2\obj\Debug\netcoreapp3.0\UserEntities2.AssemblyInfo.cs
+C:\Users\ezelc\Desktop\ASPNETswagger\UserEntities2\obj\Debug\netcoreapp3.0\UserEntities2.csproj.CoreCompileInputs.cache

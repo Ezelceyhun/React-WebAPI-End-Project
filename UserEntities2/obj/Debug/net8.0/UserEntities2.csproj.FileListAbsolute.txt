@@ -1,0 +1,12 @@
+C:\Users\ezelc\Desktop\ASPNETswagger\UserEntities2\bin\Debug\net8.0\UserEntities2.deps.json
+C:\Users\ezelc\Desktop\ASPNETswagger\UserEntities2\bin\Debug\net8.0\UserEntities2.dll
+C:\Users\ezelc\Desktop\ASPNETswagger\UserEntities2\bin\Debug\net8.0\UserEntities2.pdb
+C:\Users\ezelc\Desktop\ASPNETswagger\UserEntities2\obj\Debug\net8.0\UserEntities2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ezelc\Desktop\ASPNETswagger\UserEntities2\obj\Debug\net8.0\UserEntities2.AssemblyInfoInputs.cache
+C:\Users\ezelc\Desktop\ASPNETswagger\UserEntities2\obj\Debug\net8.0\UserEntities2.AssemblyInfo.cs
+C:\Users\ezelc\Desktop\ASPNETswagger\UserEntities2\obj\Debug\net8.0\UserEntities2.csproj.CoreCompileInputs.cache
+C:\Users\ezelc\Desktop\ASPNETswagger\UserEntities2\obj\Debug\net8.0\UserEntities2.dll
+C:\Users\ezelc\Desktop\ASPNETswagger\UserEntities2\obj\Debug\net8.0\refint\UserEntities2.dll
+C:\Users\ezelc\Desktop\ASPNETswagger\UserEntities2\obj\Debug\net8.0\UserEntities2.pdb
+C:\Users\ezelc\Desktop\ASPNETswagger\UserEntities2\obj\Debug\net8.0\ref\UserEntities2.dll
+C:\Users\ezelc\Desktop\ASPNETswagger\UserEntities2\obj\Debug\net8.0\UserEntities2.csproj.AssemblyReference.cache

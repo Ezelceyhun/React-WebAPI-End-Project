@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "dgSpecHash": "qsqdIhG5LvEty5NiAVtzMckSi80GiIA9smi+ExklcJxDv34Y3o/53XkzI71YvZmjzYpd4gJpoh0E0b2rmJMs7Q==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\ezelc\\Desktop\\ASPNETswagger\\UserEntities2\\UserEntities2.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\ezelc\\.nuget\\packages\\microsoft.identitymodel.abstractions\\7.6.0\\microsoft.identitymodel.abstractions.7.6.0.nupkg.sha512",
+    "C:\\Users\\ezelc\\.nuget\\packages\\microsoft.identitymodel.jsonwebtokens\\7.6.0\\microsoft.identitymodel.jsonwebtokens.7.6.0.nupkg.sha512",
+    "C:\\Users\\ezelc\\.nuget\\packages\\microsoft.identitymodel.logging\\7.6.0\\microsoft.identitymodel.logging.7.6.0.nupkg.sha512",
+    "C:\\Users\\ezelc\\.nuget\\packages\\microsoft.identitymodel.tokens\\7.6.0\\microsoft.identitymodel.tokens.7.6.0.nupkg.sha512",
+    "C:\\Users\\ezelc\\.nuget\\packages\\system.identitymodel.tokens.jwt\\7.6.0\\system.identitymodel.tokens.jwt.7.6.0.nupkg.sha512"
+  ],
+  "logs": []
+}

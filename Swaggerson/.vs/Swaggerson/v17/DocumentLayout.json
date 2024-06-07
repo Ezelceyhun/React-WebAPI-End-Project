@@ -1,0 +1,105 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\ezelc\\Desktop\\ASPNETswagger\\Swaggerson\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{37F726E8-0309-4D4A-A479-E937DDD3FE68}|..\\SHACrypto\\SHACrypto.csproj|c:\\users\\ezelc\\desktop\\aspnetswagger\\shacrypto\\sha256create.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FCAA4ED0-954B-48EF-9411-F5FC799AC649}|..\\CustomerUserBusiness2\\CustomerUserBusiness2.csproj|c:\\users\\ezelc\\desktop\\aspnetswagger\\customeruserbusiness2\\abstract\\customeruserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A4541099-85BC-46CD-B8E8-0CD1E1547396}|Swaggerson.csproj|C:\\Users\\ezelc\\Desktop\\ASPNETswagger\\Swaggerson\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A4541099-85BC-46CD-B8E8-0CD1E1547396}|Swaggerson.csproj|solutionrelative:controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A4C6666-F9E6-4608-B98E-CD443566CA9C}|..\\CustomerUserDataAccess2\\CustomerUserDataAccess2.csproj|c:\\users\\ezelc\\desktop\\aspnetswagger\\customeruserdataaccess2\\concrete\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A4C6666-F9E6-4608-B98E-CD443566CA9C}|..\\CustomerUserDataAccess2\\CustomerUserDataAccess2.csproj|c:\\users\\ezelc\\desktop\\aspnetswagger\\customeruserdataaccess2\\log\\logger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "SHA256Create.cs",
+              "DocumentMoniker": "C:\\Users\\ezelc\\Desktop\\ASPNETswagger\\SHACrypto\\SHA256Create.cs",
+              "RelativeDocumentMoniker": "..\\SHACrypto\\SHA256Create.cs",
+              "ToolTip": "C:\\Users\\ezelc\\Desktop\\ASPNETswagger\\SHACrypto\\SHA256Create.cs",
+              "RelativeToolTip": "..\\SHACrypto\\SHA256Create.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-06T05:48:06.242Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CustomerUserService.cs",
+              "DocumentMoniker": "C:\\Users\\ezelc\\Desktop\\ASPNETswagger\\CustomerUserBusiness2\\Abstract\\CustomerUserService.cs",
+              "RelativeDocumentMoniker": "..\\CustomerUserBusiness2\\Abstract\\CustomerUserService.cs",
+              "ToolTip": "C:\\Users\\ezelc\\Desktop\\ASPNETswagger\\CustomerUserBusiness2\\Abstract\\CustomerUserService.cs",
+              "RelativeToolTip": "..\\CustomerUserBusiness2\\Abstract\\CustomerUserService.cs",
+              "ViewState": "AQIAABkAAAAAAAAAAAAAwCoAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-05T10:35:07.672Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Logger.cs",
+              "DocumentMoniker": "C:\\Users\\ezelc\\Desktop\\ASPNETswagger\\CustomerUserDataAccess2\\Log\\Logger.cs",
+              "RelativeDocumentMoniker": "..\\CustomerUserDataAccess2\\Log\\Logger.cs",
+              "ToolTip": "C:\\Users\\ezelc\\Desktop\\ASPNETswagger\\CustomerUserDataAccess2\\Log\\Logger.cs",
+              "RelativeToolTip": "..\\CustomerUserDataAccess2\\Log\\Logger.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-05T10:28:03.219Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "UserRepository.cs",
+              "DocumentMoniker": "C:\\Users\\ezelc\\Desktop\\ASPNETswagger\\CustomerUserDataAccess2\\Concrete\\UserRepository.cs",
+              "RelativeDocumentMoniker": "..\\CustomerUserDataAccess2\\Concrete\\UserRepository.cs",
+              "ToolTip": "C:\\Users\\ezelc\\Desktop\\ASPNETswagger\\CustomerUserDataAccess2\\Concrete\\UserRepository.cs",
+              "RelativeToolTip": "..\\CustomerUserDataAccess2\\Concrete\\UserRepository.cs",
+              "ViewState": "AQIAAA4AAAAAAAAAAAA0wL0AAAA2AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-05T08:16:38.396Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "C:\\Users\\ezelc\\Desktop\\ASPNETswagger\\Swaggerson\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "Controllers\\UserController.cs",
+              "ToolTip": "C:\\Users\\ezelc\\Desktop\\ASPNETswagger\\Swaggerson\\Controllers\\UserController.cs",
+              "RelativeToolTip": "Controllers\\UserController.cs",
+              "ViewState": "AQIAAFcAAAAAAAAAAAAAwJABAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-03T12:41:20.319Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+13-34-17 -> [DEBUG] Tüm Kullanıcılar Listelendi ! (UserController.cs)
+13-34-17 -> [INFORMATION] Kullanıcılar Listelendi !
+13-34-19 -> [DEBUG] Tüm Kullanıcılar Listelendi ! (UserRepository.cs)
+13-35-55 -> [DEBUG] Tüm Kullanıcılar Listelendi ! (UserController.cs)
+13-35-55 -> [INFORMATION] Kullanıcılar Listelendi !
+13-35-55 -> [DEBUG] Tüm Kullanıcılar Listelendi ! (UserRepository.cs)
+13-58-21 -> [DEBUG] Tüm Kullanıcılar Listelendi ! (UserController.cs)
+13-58-21 -> [INFORMATION] Kullanıcılar Listelendi !
+13-58-22 -> [DEBUG] Tüm Kullanıcılar Listelendi ! (UserRepository.cs)
+13-58-29 -> [DEBUG] Id Bilgisine Göre Listeleme Başarılı ! (UserRepository.cs)
+13-58-29 -> [DEBUG] Id Değerine Göre Kullanıcılar Listelendi ! (UserController.cs)
+13-58-29 -> [INFORMATION] Id Değerine Göre Kullanıcılar Listelendi !
+13-58-31 -> [DEBUG] Id Bilgisine Göre Listeleme Başarılı ! (UserRepository.cs)
+13-58-31 -> [WARNING] Id Değerine Göre Kullanıcılar Listelenemedi ! (UserController.cs)
+13-58-40 -> [DEBUG] Yeni Bir Token Oluşturuldu ! (CustomerUserService.cs)
+13-58-40 -> [DEBUG] Token Oluşturma Başarılı ! (UserRepository.cs)
+13-58-40 -> [DEBUG] Token Oluşturma Başarılı ! (UserController.cs)
+13-58-40 -> [INFORMATION] Token Oluşturuldu !
+13-58-40 -> [DEBUG] Yeni Bir Token Oluşturuldu ! (UserController.cs)
+13-58-40 -> [INFORMATION] Oturum Açıldı !
+13-58-44 -> [DEBUG] Yeni Bir Token Oluşturuldu ! (CustomerUserService.cs)
+13-58-44 -> [DEBUG] Token Oluşturma Başarılı ! (UserRepository.cs)
+13-58-44 -> [WARNING] Hatalı Giriş !
+13-58-50 -> [DEBUG] Id Bilgisine Göre Araçlar Listelenmiştir ! (UserRepository.cs)
+13-58-50 -> [DEBUG] Id Bilgisine Göre Araç Sıralanmıştır ! (UserController.cs)
+13-58-50 -> [INFORMATION] Araçlar Sıralandı !
+13-58-58 -> [DEBUG] Satışta Olan Araçlar Listlendi ! (UserRepository.cs)
+13-58-58 -> [DEBUG] Satışta Olan Araçlar Listelendi ! (UserController.cs)
+13-58-58 -> [INFORMATION] Satışta Olan Araçlar Listelendi !
+13-59-02 -> [DEBUG] Satışta Olan Araçlar Listlendi ! (UserRepository.cs)
+13-59-02 -> [WARNING] Satışta Olan Araçlar Listelenemedi ! HATA:  (UserController.cs)
+13-59-08 -> [DEBUG] Geçmiş Satışlar Listelendi ! (UserRepository.cs)
+13-59-08 -> [DEBUG] Id Bilgisine Göre Geçmiş Satışlar Listelendi ! (UserController.cs)
+13-59-08 -> [INFORMATION] Geçmiş Satışlar Listelendi !
+13-59-22 -> [DEBUG] Kişi Bilgisine Göre Araçlar Listelendi ! (UserRepository.cs)
+13-59-22 -> [DEBUG] Kişi Bilgisine Göre Araçlar Listelendi ! (UserController.cs)
+13-59-22 -> [INFORMATION] Kişiye Göre Araçlar Listelendi !
+13-59-24 -> [DEBUG] Kişi Bilgisine Göre Araçlar Listelendi ! (UserRepository.cs)
+13-59-24 -> [WARNING] Kişi Bilgisi Hatalı ! HATA:  (UserController.cs)
+13-59-32 -> [DEBUG] Onay Bekleyen Araçlar Listelendi ! (UserRepository.cs)
+13-59-32 -> [DEBUG] Id Bilgisine Göre Onay Bekleyen Araçlar Listlendi ! (UserController.cs)
+13-59-32 -> [INFORMATION] Onay Bekleyen Araçlar Listelendi !
+13-59-35 -> [DEBUG] Onay Bekleyen Araçlar Listelendi ! (UserRepository.cs)
+13-59-35 -> [WARNING] Id Bilgisi Hatalı ! HATA:  (UserController.cs)
+13-59-40 -> [DEBUG] Onay Bekleyen Araçlar Listelendi ! (UserRepository.cs)
+13-59-40 -> [WARNING] Id Bilgisi Hatalı ! HATA:  (UserController.cs)
+13-59-45 -> [DEBUG] Onay Bekleyen Araçlar Listelendi ! (UserRepository.cs)
+13-59-45 -> [DEBUG] Id Bilgisine Göre Onay Bekleyen Araçlar Listlendi ! (UserController.cs)
+13-59-45 -> [INFORMATION] Onay Bekleyen Araçlar Listelendi !

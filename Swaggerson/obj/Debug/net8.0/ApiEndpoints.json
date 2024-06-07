@@ -1,0 +1,266 @@
+[
+  {
+    "ContainingType": "Swaggerson.Controllers.UserController",
+    "Method": "GetCarById",
+    "RelativePath": "Cars/{IdMore}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "IdMore",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Swaggerson.Controllers.UserController",
+    "Method": "CreateCar",
+    "RelativePath": "CreateCar",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "createcar",
+        "Type": "UserEntities2.CreateCarDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Swaggerson.Controllers.UserController",
+    "Method": "CreateSoldSales",
+    "RelativePath": "CreateSoldSales",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "soldsales",
+        "Type": "UserEntities2.UserSoldSales",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Swaggerson.Controllers.UserController",
+    "Method": "CreateUser",
+    "RelativePath": "CreateUser",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "user",
+        "Type": "UserEntities2.CustomerUser",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Swaggerson.Controllers.UserController",
+    "Method": "DeleteUser",
+    "RelativePath": "DeleteUser/{Id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Swaggerson.Controllers.UserController",
+    "Method": "GetUserByEmail",
+    "RelativePath": "Email/{email}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "email",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "password",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Swaggerson.Controllers.UserController",
+    "Method": "GetUserEmail",
+    "RelativePath": "login/{email}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "email",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "password",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Swaggerson.Controllers.UserController",
+    "Method": "SelectUpdateCarUser",
+    "RelativePath": "SelectCar/{carid}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "carid",
+        "Type": "UserEntities2.CustomerUserMore",
+        "IsRequired": true
+      },
+      {
+        "Name": "carid",
+        "Type": "",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Swaggerson.Controllers.UserController",
+    "Method": "GetUserSoldSales",
+    "RelativePath": "Sell/{UserSellingId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "UserSellingId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Swaggerson.Controllers.UserController",
+    "Method": "GetCarBySellId",
+    "RelativePath": "SellCar/{OwnerUserId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "OwnerUserId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "UserBuy",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Swaggerson.Controllers.UserController",
+    "Method": "GetCarSoldId",
+    "RelativePath": "Sold/{sold}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "sold",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Swaggerson.Controllers.UserController",
+    "Method": "UpdateCar",
+    "RelativePath": "UpdateCar/{car}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "car",
+        "Type": "UserEntities2.CustomerUserMore",
+        "IsRequired": true
+      },
+      {
+        "Name": "car",
+        "Type": "",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Swaggerson.Controllers.UserController",
+    "Method": "UpdateUser",
+    "RelativePath": "UpdateUser/{user}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "user",
+        "Type": "UserEntities2.CustomerUser",
+        "IsRequired": true
+      },
+      {
+        "Name": "user",
+        "Type": "",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Swaggerson.Controllers.UserController",
+    "Method": "GetAllUser",
+    "RelativePath": "User",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Swaggerson.Controllers.UserController",
+    "Method": "GetUserById",
+    "RelativePath": "User/{Id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

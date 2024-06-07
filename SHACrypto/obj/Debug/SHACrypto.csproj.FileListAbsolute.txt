@@ -1,0 +1,6 @@
+C:\Users\ezelc\Desktop\ASPNETswagger\SHACrypto\bin\Debug\SHACrypto.dll
+C:\Users\ezelc\Desktop\ASPNETswagger\SHACrypto\bin\Debug\SHACrypto.pdb
+C:\Users\ezelc\Desktop\ASPNETswagger\SHACrypto\obj\Debug\SHACrypto.csproj.AssemblyReference.cache
+C:\Users\ezelc\Desktop\ASPNETswagger\SHACrypto\obj\Debug\SHACrypto.csproj.CoreCompileInputs.cache
+C:\Users\ezelc\Desktop\ASPNETswagger\SHACrypto\obj\Debug\SHACrypto.dll
+C:\Users\ezelc\Desktop\ASPNETswagger\SHACrypto\obj\Debug\SHACrypto.pdb
