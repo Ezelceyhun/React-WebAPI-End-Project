@@ -1,18 +1,18 @@
 ASP.NET Web API Kullanılarak Oluşturulan Araç Satış Sayfası Projesidir.
 
-Full Stack Çalışılmıştır. Proje Tamamiyle bana aittir.
+Full Stack Çalışılmıştır. Proje Tamamiyle Bana Aittir.
 
-Backend: .NET 8.0 C#   /  Frontend: React/Html/Css/Js  /  Veritabanı: SQL Server
+Backend: .NET Core 8.0 C#  /  Frontend: React/Html/Css/Js  /  Veritabanı: SQL Server
 
 Backend Tarafında C# ASP.NET Core'a Yardımcı Olması İçin Swagger Dökümantasyonu Kullanılmıştır. 
 
-Debug / Information / Warning / Danger Logları LogFile Klasöründe tutulmaktadır.
+Debug / Information / Warning / Danger Logları LogFile Klasöründe Tutulmaktadır.
 
 Yeni Kullanıcı Oluşturduğunuzda Şifreniz SHA256 Şifrelemen Fonksiyonu İle Şifrelenerek Veritabanına Yazılır. SHA256 Decode Edilemez, Bu Sayede Şifreyi Kırmak İmkansızdır.
 
 Login Olunduğunda Karşılık Olarak Bir Token Oluşturur. Bu Sayede Oturum Açılır ve Sayfalar Arası Gezinti Yapılabilir.
 
-Frontend Tarafında React Kullanılmıştır. Çok Fazla node_modules Kullanıldığından Dolayı Proje Dosyalarına Eklenmemiştir. Kodları İnceleyip Gerekli Kütüphaneleri İndirebilirsiniz.
+Frontend Tarafında React Kullanılmıştır.
 
 Tüm API Bağlantıları AXIOS İle Yapılmıştır.
 
@@ -21,6 +21,8 @@ Tüm API Bağlantıları AXIOS İle Yapılmıştır.
 Yeni Araç Oluşturmada Fotoğraf Eklenmemektedir. Sadece Home Sayfasında Araç Güncelle Kısmından Eklenmektedir. Eklenen Fotoğraflar Online Bir API'da Tutulmaktadır. Ücretsiz API Kapsamı 1 Gündür. 1 Gün Sonra Eklenen Fotoğraflar Silinmektedir. İsteğe Göre Fotoğraflar İçin Yeni Web API Kullanılabilir.
 
 Kullanıcıya Yeni Araç Eklendiğinde / Satıldığında Geçmiş Satışlar Tablosuna Ekleme Yapılmaktadır.
+
+Satışa Çıkartılan Araçlar Stoktan Düşer. Satış İptali Olursa Stok Güncellenir.
 
 Veritabanı Tarafında SQL Server Kullanılmıştır. Veritabanı Projeye Dahil Edilmiştir. Veritabanında Migration Yapısı Kullanılmıştır. Birbirleri İle İlişkili Tablolardır. Değişiklik Yapılmasına İzin Verilmez.
 
@@ -42,7 +44,7 @@ When you create a new user, your password is encrypted with the SHA256 encryptio
 
 When you log in, a token is created in return. In this way, you can log in and navigate between pages.
 
-React is Used on the Frontend. It was not added to the project files due to too many node_modules being used. You can review the codes and download the required libraries.
+React is Used on the Frontend.
 
 All API Connections Made with AXIOS.
 
