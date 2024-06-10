@@ -2,7 +2,7 @@ ASP.NET Web API Kullanılarak Oluşturulan Araç Satış Sayfası Projesidir.
 
 Full Stack Çalışılmıştır. Proje Tamamiyle bana aittir.
 
-Backend: C#  /  Frontend: React/Html/Css/Js  /  Veritabanı: SQL Server
+Backend: .NET 8.0 C#   /  Frontend: React/Html/Css/Js  /  Veritabanı: SQL Server
 
 Backend Tarafında C# ASP.NET Core'a Yardımcı Olması İçin Swagger Dökümantasyonu Kullanılmıştır. 
 
@@ -32,7 +32,7 @@ It is a Vehicle Sales Page Project Created Using ASP.NET Web API.
 
 Full Stack Worked. The project belongs entirely to me.
 
-Backend: C# / Frontend: React/Html/Css/Js / Database: SQL Server
+Backend: .NET 8.0 C# / Frontend: React/Html/Css/Js / Database: SQL Server
 
 Swagger Documentation was Used to Help C# ASP.NET Core on the Backend Side. 
 
