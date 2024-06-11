@@ -20,6 +20,8 @@ Tüm API Bağlantıları AXIOS İle Yapılmıştır.
 
 Yeni Araç Oluşturmada Fotoğraf Eklenmemektedir. Sadece Home Sayfasında Araç Güncelle Kısmından Eklenmektedir. Eklenen Fotoğraflar Online Bir API'da Tutulmaktadır. Ücretsiz API Kapsamı 1 Gündür. 1 Gün Sonra Eklenen Fotoğraflar Silinmektedir. İsteğe Göre Fotoğraflar İçin Yeni Web API Kullanılabilir.
 
+Login ve Home Sayfalarında Araçların Fotoğraflarına Tıklayarak CarDetail Sayfasına Gidebilir, Aracın Detaylarını Görebilirsiniz. Ayrıca Giriş Yapıldıysa Gösterilen Aracı Satın Alabilir veya Araç Size Aitse Satışını İptal Edebilirsiniz.
+
 Kullanıcıya Yeni Araç Eklendiğinde / Satıldığında Geçmiş Satışlar Tablosuna Ekleme Yapılmaktadır.
 
 Satışa Çıkartılan Araçlar Stoktan Düşer. Satış İptali Olursa Stok Güncellenir.
@@ -54,7 +56,9 @@ When you log in, your information is kept as a token in LocalStorage. It was als
 
 Photos are not added when creating a new vehicle. It is only added from the Vehicle Update Section on the Home Page. Added Photos Are Kept in an Online API. Free API Coverage is 1 Day. Photos Added After 1 Day Are Deleted. New Web API Available for Photos Optionally.
 
-When a New Vehicle is Added/Sold to the User, It is Added to the Past Sales Table.
+You can go to the CarDetail Page and See the Details of the Vehicle by Clicking on the Photos of the Vehicles on the Login and Home Pages. You can also buy the displayed vehicle if you are logged in, or cancel the sale if the vehicle belongs to you.
+
+When a New Vehicle is Added/Sold to the User, it is Added to the Past Sales Table.
 
 Vehicles put on sale are removed from stock. If a sale is cancelled, the stock is updated.
 
