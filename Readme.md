@@ -36,11 +36,11 @@ It is a Vehicle Sales Page Project Created Using ASP.NET Web API.
 
 Full Stack Worked. The project belongs entirely to me.
 
-Backend: .NET 8.0 C# / Frontend: React/Html/Css/Js / Database: SQL Server
+Backend: .NET Core 8.0 C# / Frontend: React/Html/Css/Js / Database: SQL Server
 
 Swagger Documentation was Used to Help C# ASP.NET Core on the Backend Side. 
 
-Debug / Information / Warning / Danger Logs are kept in the LogFile Folder.
+Debug / Information / Warning / Danger Logs are Kept in the LogFile Folder.
 
 When you create a new user, your password is encrypted with the SHA256 encryption function and written to the database. SHA256 cannot be decoded, so it is impossible to crack the password.
 
@@ -55,6 +55,10 @@ When you log in, your information is kept as a token in LocalStorage. It was als
 Photos are not added when creating a new vehicle. It is only added from the Vehicle Update Section on the Home Page. Added Photos Are Kept in an Online API. Free API Coverage is 1 Day. Photos Added After 1 Day Are Deleted. New Web API Available for Photos Optionally.
 
 When a New Vehicle is Added/Sold to the User, It is Added to the Past Sales Table.
+
+Vehicles put on sale are removed from stock. If a sale is cancelled, the stock is updated.
+
+On the Home Page, Tools have been replaced with DataTable instead of Table. In this way, sorting can be done.
 
 SQL Server is Used on the Database Side. Database is Included in the Project. Migration Structure is Used in the Database. These are tables that are related to each other. No Changes Allowed.
 
