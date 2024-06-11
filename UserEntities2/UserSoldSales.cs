@@ -19,6 +19,12 @@ namespace UserEntities2
         public string Img {  get; set; }
         public string CarName { get; set; }
         public string CarModelName { get; set; }
+        public string modelYears { get; set; }
+        public string totalKm { get; set; }
+        public string fuel {  get; set; }
+        public string shift {  get; set; }
+        public string engineHp {  get; set; }
+        public string carColor {  get; set; }
         public int CarPrice { get; set; }
         public int UserId { get; set; }
         public string UserName { get; set; }

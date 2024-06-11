@@ -384,6 +384,12 @@ namespace Swaggerson.Controllers
                 a.OwnerUserId = createcar.OwnerUserId;
                 a.img = createcar.img;
                 a.Sold = createcar.Sold;
+                a.ModelYears = createcar.ModelYears;
+                a.TotalKm = createcar.TotalKm;
+                a.Fuel = createcar.Fuel;
+                a.Shift = createcar.Shift;
+                a.EngineHp = createcar.EngineHp;
+                a.CarColor = createcar.CarColor;
 
                 var createdCar = await _customeruserRepository.CreateCar(a);
                 Logger.LogDebug("Yeni Araç Eklendi ! (UserController.cs)");

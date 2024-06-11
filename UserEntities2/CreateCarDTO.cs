@@ -20,5 +20,11 @@ namespace UserEntities2
         public string img { get; set; }
         public int UserBuy { get; set; }
         public int OwnerUserId { get; set; }
+        public string ModelYears {  get; set; }
+        public string TotalKm {  get; set; }
+        public string Fuel {  get; set; }
+        public string Shift { get; set; }
+        public string EngineHp {  get; set; }
+        public string CarColor {  get; set; }
     }
 }

@@ -183,7 +183,6 @@ namespace CustomerUserBusiness2.Abstract
         {
             try
             {
-                Logger.LogDebug("Kişi Bilgisine Göre Araçlar Listelendi ! (CustomerUserService.cs)");
                 return await _customerUserService.GetUserEmail(email, password);
             }
             catch (Exception ex)
