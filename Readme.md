@@ -24,6 +24,8 @@ Kullanıcıya Yeni Araç Eklendiğinde / Satıldığında Geçmiş Satışlar Ta
 
 Satışa Çıkartılan Araçlar Stoktan Düşer. Satış İptali Olursa Stok Güncellenir.
 
+Home Sayfasında Araçlar Table yerine DataTable İle Değiştirilmiştir. Bu Sayede Sıralama Yapılabilmektedir.
+
 Veritabanı Tarafında SQL Server Kullanılmıştır. Veritabanı Projeye Dahil Edilmiştir. Veritabanında Migration Yapısı Kullanılmıştır. Birbirleri İle İlişkili Tablolardır. Değişiklik Yapılmasına İzin Verilmez.
 
 Hem Backend Hemde Frontend Tarafında Ki Kodlarda Açıklamalar Verilmiştir. 
