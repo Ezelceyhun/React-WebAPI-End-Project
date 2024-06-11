@@ -1,6 +1,0 @@
-C:\Users\ezelc\Desktop\ASPNETswagger\UserEntities\bin\Debug\UserEntities.dll
-C:\Users\ezelc\Desktop\ASPNETswagger\UserEntities\bin\Debug\UserEntities.pdb
-C:\Users\ezelc\Desktop\ASPNETswagger\UserEntities\obj\Debug\UserEntities.csproj.AssemblyReference.cache
-C:\Users\ezelc\Desktop\ASPNETswagger\UserEntities\obj\Debug\UserEntities.csproj.CoreCompileInputs.cache
-C:\Users\ezelc\Desktop\ASPNETswagger\UserEntities\obj\Debug\UserEntities.dll
-C:\Users\ezelc\Desktop\ASPNETswagger\UserEntities\obj\Debug\UserEntities.pdb
