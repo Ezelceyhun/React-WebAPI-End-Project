@@ -1,0 +1,91 @@
+.CarDetail
+{
+    margin: auto;
+    margin-top: 10px;
+    margin-top: 10px;
+    background-color: lightslategray;
+    height: 715px;
+    width: 90%;
+    border-radius: 10px;
+}
+.CarImg
+{
+    float: left;
+    margin-top: 10px;
+    margin-left: 10px;
+    border-radius: 10px;
+    height: 600px;
+    width: 600px;
+}
+.CarImg img
+{
+    height: 600px;
+    width: 600px;
+}
+.floatStop
+{
+    clear: both;
+}
+.CarName
+{
+    float: left;
+    margin-top: 10px;
+    margin-left: 10px;
+    background-image: linear-gradient(lightslategray,#CECACA);
+    height: 200px;
+    width: 760px;
+}
+.CarName p 
+{
+    margin-top: 80px;
+    font-size: 35px;
+    font-weight: bold;
+}
+.CarPrice
+{
+    float: left;
+    margin-left: 10px;
+    background-image: linear-gradient(#CECACA, lightslategray);
+    width: 760px;
+    height: 390px;
+    text-align: left;
+    padding-left: 40px;
+}
+.CarPrice p
+{
+    margin-top: 60px;
+    font-size: 25px;
+}
+.CarPrice button
+{
+    margin-left: 490px;  
+    width: 200px;    
+}
+.UpdateDate
+{
+    margin-left: 10px;
+    padding-top: 20px;
+    clear: both; 
+    height: 100px;
+    width: 1370px;
+}
+.GeriDonCarDetail
+{
+    background-color: #101828;
+    height: 50px;
+    width: 300px;
+    margin: auto;
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+}
+.GeriDonButtonCarDetail
+{
+    margin: auto;
+}
+.CarName button
+{
+    margin-top: -5px;
+    margin-right: -555px;
+    height: 60px;
+    width: 200px;
+}

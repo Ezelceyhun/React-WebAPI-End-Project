@@ -10,6 +10,12 @@ function CreateCar() {
   const [carname, setcarname] = useState("");
   const [carmodel, setcarmodel] = useState("");
   const [carfiyat, setcarfiyat] = useState("");
+  const [carmodelyears, setcarmodelyears] = useState("");
+  const [cartotalkm, setcartotalkm] = useState("");
+  const [carfuel, setcarfuel] = useState("");
+  const [carshift, setcarshift] = useState("");
+  const [carenginehp, setcarenginehp] = useState("");
+  const [carcolor, setcarcolor] = useState("");
 
   const [CarURL, setCarURL] = useState("");
   const FileUploadRef = useRef("");
@@ -45,6 +51,7 @@ function CreateCar() {
 
   // Yeni Araç Oluşturma
   const CreateCarButton = () => {
+    console.log(carmodelyears,cartotalkm,carfuel,carshift,carenginehp,carcolor);
     if (CarURL === "") {
       CarImgUrl = "no-photos.png";
     } else {
@@ -60,6 +67,13 @@ function CreateCar() {
           carModelName: carmodel,
           img: CarImgUrl,
           ownerUserId: 10,
+          userBuy: 10,
+          modelYears: carmodelyears,
+          totalKm: cartotalkm,
+          fuel: carfuel,
+          shift: carshift,
+          engineHp: carenginehp,
+          carColor: carcolor,
         })
         .then((response) => {
           alert("Başarılı");
@@ -114,7 +128,62 @@ function CreateCar() {
               onChange={(e) => setcarfiyat(e.target.value)}
             />
           </div>
+
           <div className="kutuCarCreate">
+            <label>Model Yılı</label>
+            <br/>
+            <input
+              type="text"
+              value={carmodelyears}
+              onChange={(e) => setcarmodelyears(e.target.value)}
+            />
+          </div>
+          <div className="kutuCarCreate">
+            <label>Toplam Km</label>
+            <br/>
+            <input
+              type="text"
+              value={cartotalkm}
+              onChange={(e) => setcartotalkm(e.target.value)}
+            />
+          </div>
+          <div className="kutuCarCreate">
+            <label>Yakıt Türü</label>
+            <br/>
+            <input
+              type="text"
+              value={carfuel}
+              onChange={(e) => setcarfuel(e.target.value)}
+            />
+          </div>
+          <div className="kutuCarCreate">
+            <label>Vites</label>
+            <br/>
+            <input
+              type="text"
+              value={carshift}
+              onChange={(e) => setcarshift(e.target.value)}
+            />
+          </div>
+          <div className="kutuCarCreate">
+            <label>Motor Gücü</label>
+            <br/>
+            <input
+              type="text"
+              value={carenginehp}
+              onChange={(e) => setcarenginehp(e.target.value)}
+            />
+          </div>
+          <div className="kutuCarCreate">
+            <label>Araç Rengi</label>
+            <br/>
+            <input
+              type="text"
+              value={carcolor}
+              onChange={(e) => setcarcolor(e.target.value)}
+            />
+          </div>
+          <div className="kutuCarCreateLabel">
             <label className="uyariLabel">Araç Resmini Güncelle Sayfasından Ekleyiniz!</label>
             {/* <form encType="multipart/form-data">
               <button disabled type="submit" onClick={HandleImgUpload}>
@@ -129,7 +198,7 @@ function CreateCar() {
               />
             </form> */}
           </div>
-          <div className="kutuCarCreate">
+          <div className="kutuCarCreateButton">
             <button type="submit" onClick={CreateCarButton}>
               Kaydet
             </button>

@@ -49,7 +49,13 @@ const Sales = () => {
     picture,
     carName,
     carModelName,
-    price
+    price,
+    modelyears,
+    totalkm,
+    fuel,
+    shift,
+    enginehp,
+    carcolor
   ) => {
     try {
       axios
@@ -73,6 +79,12 @@ const Sales = () => {
           ownerUserId: onaycarid,
           img: picture,
           userBuy: onaycarid,
+          modelYears: modelyears,
+          totalKm: totalkm,
+          fuel: fuel,
+          shift: shift,
+          engineHp: enginehp,
+          carColor: carcolor,
           customerUser: {
             id: onaycarid,
             name: onaycarname,
@@ -88,7 +100,20 @@ const Sales = () => {
         .catch((error) => {});
     } catch (error) {}
   };
-  const historySell = async (idMore, picture, carName, carModelName, price) => {
+  const historySell = async (
+    idMore,
+    picture,
+    carName,
+    carModelName,
+    price,
+    modelyears,
+    totalkm,
+    fuel,
+    shift,
+    enginehp,
+    carcolor
+  ) => {
+    console.log(modelyears, totalkm, fuel, shift, enginehp, carcolor);
     try {
       axios
         .post("http://localhost:61334/CreateSoldSales", {
@@ -102,6 +127,12 @@ const Sales = () => {
           userName: onaycarname,
           userEmail: onaycarmail,
           dateTimeHistory: anlik,
+          modelYears: modelyears,
+          totalKm: totalkm,
+          fuel: fuel,
+          shift: shift,
+          engineHp: enginehp,
+          carColor: carcolor,
         })
         .then((historyResp) => {})
         .catch((error) => {});
@@ -117,7 +148,13 @@ const Sales = () => {
     picture,
     carName,
     carModelName,
-    price
+    price,
+    modelyears,
+    totalkm,
+    fuel,
+    shift,
+    enginehp,
+    carcolor
   ) => {
     try {
       axios
@@ -141,6 +178,12 @@ const Sales = () => {
           ownerUserId: onaycarid,
           img: picture,
           userBuy: onaycarid,
+          modelYears: modelyears,
+          totalKm: totalkm,
+          fuel: fuel,
+          shift: shift,
+          engineHp: enginehp,
+          carColor: carcolor,
           customerUser: {
             id: onaycarid,
             name: onaycarname,
@@ -151,7 +194,19 @@ const Sales = () => {
           },
         })
         .then((carresponse) => {
-          historySell(idMore, picture, carName, carModelName, price);
+          historySell(
+            idMore,
+            picture,
+            carName,
+            carModelName,
+            price,
+            modelyears,
+            totalkm,
+            fuel,
+            shift,
+            enginehp,
+            carcolor
+          );
         })
         .catch((error) => {});
     } catch (error) {}
@@ -201,7 +256,13 @@ const Sales = () => {
                     sellcar.img,
                     sellcar.carName,
                     sellcar.carModelName,
-                    sellcar.price
+                    sellcar.price,
+                    sellcar.modelYears,
+                    sellcar.totalKm,
+                    sellcar.fuel,
+                    sellcar.shift,
+                    sellcar.engineHp,
+                    sellcar.carColor
                   )
                 }
               >
@@ -216,7 +277,13 @@ const Sales = () => {
                     sellcar.img,
                     sellcar.carName,
                     sellcar.carModelName,
-                    sellcar.price
+                    sellcar.price,
+                    sellcar.modelYears,
+                    sellcar.totalKm,
+                    sellcar.fuel,
+                    sellcar.shift,
+                    sellcar.engineHp,
+                    sellcar.carColor
                   )
                 }
               >

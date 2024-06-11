@@ -45,6 +45,12 @@ const OldSales = () => {
             <th>IMG</th>
             <th>ARAÇ ADI</th>
             <th>ARAÇ MODEL</th>
+            {/* <th>MODEL YILI</th>
+            <th>TOPLAM KM</th>
+            <th>YAKIT TÜRÜ</th>
+            <th>VİTES</th>
+            <th>MOTOR GÜCÜ</th>
+            <th>ARAÇ RENGİ</th> */}
             <th>ARAÇ FİYAT</th>
             <th>ALAN KİŞİ ID</th>
             <th>ALAN KİŞİ ADI</th>
@@ -60,6 +66,12 @@ const OldSales = () => {
               </td>
               <td>{cars.carName}</td>
               <td>{cars.carModelName}</td>
+              {/* <td>{cars.modelYears}</td>
+              <td>{cars.totalKm}</td>
+              <td>{cars.fuel}</td>
+              <td>{cars.shift}</td>
+              <td>{cars.engineHp}</td>
+              <td>{cars.carColor}</td> */}
               <td>{cars.carPrice}</td>
               <td>{cars.userId}</td>
               <td>{cars.userName}</td>

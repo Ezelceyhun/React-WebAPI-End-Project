@@ -56,12 +56,7 @@ const UpdateCar = () => {
       });
   }, []);
 
-  // Inputlardan Gelen Değerleri Al
-  const [CarName, setCarName] = useState("");  
-  const [CarPrice, setCarPrice] = useState("");
-  const [CarModelName, setCarModelName] = useState("");
-  
-  // Araç Bilgileri İçin Değişkenler  
+  // Araç Bilgileri İçin Değişkenler
   let carprice;
   let name = "";
   let owneruserid;
@@ -71,9 +66,55 @@ const UpdateCar = () => {
   let customeruseremail = "";
   let customeruserpass = "";
   let customerusertotalcar;
+  let carcolor = "";
+  let carenginehp = "";
+  let carshift = "";
+  let carfuel = "";
+  let carkm = "";
+  let carmodelyears = "";
 
+  // Inputlardan Gelen Değerleri Al
+  const [CarName, setCarName] = useState("");
+  const [CarPrice, setCarPrice] = useState("");
+  const [CarModelName, setCarModelName] = useState("");
+  const [CarModelYears, setCarModelYears] = useState("");
+  const [CarKm, setCarKm] = useState("");
+  const [CarFuel, setCarFuel] = useState("");
+  const [CarShift, setCarShift] = useState("");
+  const [CarEngineHp, setCarEngineHp] = useState("");
+  const [CarColor, setCarColor] = useState("");
   // Araç Güncelleme Axios'u
   const UpdateCarButon = async () => {
+    if (CarColor === null || CarColor === "") {
+      carcolor = cars.carColor;
+    } else {
+      carcolor = CarColor;
+    }
+    if (CarEngineHp === null || CarEngineHp === "") {
+      carenginehp = cars.engineHp;
+    } else {
+      carenginehp = CarEngineHp;
+    }
+    if (CarShift === null || CarShift === "") {
+      carshift = cars.shift;
+    } else {
+      carshift = CarShift;
+    }
+    if (CarFuel === null || CarFuel === "") {
+      carfuel = cars.fuel;
+    } else {
+      carfuel = CarFuel;
+    }
+    if (CarKm === null || CarKm === "") {
+      carkm = cars.totalKm;
+    } else {
+      carkm = CarKm;
+    }
+    if (CarModelYears === null || CarModelYears === "") {
+      carmodelyears = cars.modelYears;
+    } else {
+      carmodelyears = CarModelYears;
+    }
     if (CarName === null || CarName === "") {
       name = cars.carName;
     } else {
@@ -115,6 +156,12 @@ const UpdateCar = () => {
           ownerUserId: owneruserid,
           img: CarImgUrl,
           userBuy: cars.userBuy,
+          modelYears: carmodelyears,
+          totalKm: carkm,
+          fuel: carfuel,
+          shift: carshift,
+          engineHp: carenginehp,
+          carColor: carcolor,
           customerUser: {
             id: customeruserid,
             name: customerusername,
@@ -136,6 +183,30 @@ const UpdateCar = () => {
   const [CarNameInputVisible, setCarNameInputVisible] = useState(false);
   const [CarPriceInputVisible, setCarPriceInputVisible] = useState(false);
   const [CarModelNameInputVisible, setCarModelNameInputVisible] = useState(false);
+  const [CarModelYearsInputVisible, setCarModelYearsInputVisible] = useState(false);
+  const [CarKmInputVisible, setCarKmInputVisible] = useState(false);
+  const [CarFuelInputVisible, setCarFuelInputVisible] = useState(false);
+  const [CarShiftInputVisible, setCarShiftInputVisible] = useState(false);
+  const [CarEngineHpInputVisible, setCarEngineHpInputVisible] = useState(false);
+  const [CarColorInputVisible, setCarColorInputVisible] = useState(false);
+  const handleCarColorClick = () => {
+    setCarColorInputVisible(true);
+  }
+  const handleCarEngineHpClick = () => {
+    setCarEngineHpInputVisible(true);
+  }
+  const handleCarShiftClick = () => {
+    setCarShiftInputVisible(true);
+  }
+  const handleCarFuelClick = () => {
+    setCarFuelInputVisible(true);
+  }
+  const handleCarKmClick = () => {
+    setCarKmInputVisible(true);
+  }
+  const handleCarModelYearsClick = () => {
+    setCarModelYearsInputVisible(true);
+  }
   const handleCarNameLabelClick = () => {
     setCarNameInputVisible(true);
   };
@@ -150,7 +221,7 @@ const UpdateCar = () => {
   const GeriDonButton = () => {
     localStorage.removeItem("gelencarid");
     navigate("/Home");
-  }
+  };
   return (
     <div>
       <div className="GeriDonButtonBackUpdateCar">
@@ -163,11 +234,17 @@ const UpdateCar = () => {
         <div className="tableClass">
           <table border={1} className="Table" align="center">
             <tr>
-              <th>ID</th>
-              <th>ARAÇ RESİM</th>
-              <th>ARAÇ ADI</th>
-              <th>ARAÇ MODELİ</th>
-              <th>FİYAT</th>
+            <th>ARAÇ ID</th>
+            <th>ARAÇ RESİM</th>
+            <th>ARAÇ ADI</th>
+            <th>ARAÇ MODEL</th>
+            <th>MODEL YILI</th>
+            <th>KM</th>
+            <th>YAKIT TÜRÜ</th>
+            <th>VİTES</th>
+            <th>MOTOR GÜCÜ</th>
+            <th>RENK</th>
+            <th>FİYAT</th>
               <th>SON GÜNCELLEME TARİHİ</th>
             </tr>
 
@@ -221,6 +298,89 @@ const UpdateCar = () => {
                     />
                   )}
                 </td>
+
+                <td>
+                  <label onClick={handleCarModelYearsClick}>
+                    {cars.modelYears} 
+                  </label>
+                  <br />
+                  {CarModelYearsInputVisible && (
+                    <input
+                      type="text"
+                      placeholder="Araç Model Yılını Girin."
+                      value={CarModelYears}
+                      onChange={(e) => setCarModelYears(e.target.value)}
+                    />
+                  )}
+                </td>
+
+                <td>
+                  <label onClick={handleCarKmClick}>{cars.totalKm} </label>
+                  <br />
+                  {CarKmInputVisible && (
+                    <input
+                      type="text"
+                      placeholder="Araç Km'sini Girin."
+                      value={CarKm}
+                      onChange={(e) => setCarKm(e.target.value)}
+                    />
+                  )}
+                </td>
+
+                <td>
+                  <label onClick={handleCarFuelClick}>{cars.fuel} </label>
+                  <br />
+                  {CarFuelInputVisible && (
+                    <input
+                      type="text"
+                      placeholder="Yakıt Türünü Girin."
+                      value={CarFuel}
+                      onChange={(e) => setCarFuel(e.target.value)}
+                    />
+                  )}
+                </td>
+
+                <td>
+                  <label onClick={handleCarShiftClick}>{cars.shift} </label>
+                  <br />
+                  {CarShiftInputVisible && (
+                    <input
+                      type="text"
+                      placeholder="Araç Vites Modelini Girin."
+                      value={CarShift}
+                      onChange={(e) => setCarShift(e.target.value)}
+                    />
+                  )}
+                </td>
+
+                <td>
+                  <label onClick={handleCarEngineHpClick}>
+                    {cars.engineHp} HP
+                  </label>
+                  <br />
+                  {CarEngineHpInputVisible && (
+                    <input
+                      type="text"
+                      placeholder="Motor Gücünü Girin."
+                      value={CarEngineHp}
+                      onChange={(e) => setCarEngineHp(e.target.value)}
+                    />
+                  )}
+                </td>
+
+                <td>
+                  <label onClick={handleCarColorClick}>{cars.carColor}  </label>
+                  <br />
+                  {CarColorInputVisible && (
+                    <input
+                      type="text"
+                      placeholder="Araç Rengini Girin."
+                      value={CarColor}
+                      onChange={(e) => setCarColor(e.target.value)}
+                    />
+                  )}
+                </td>
+
                 <td>
                   <label onClick={handleCarPriceLabelClick}>
                     {cars.price} ₺

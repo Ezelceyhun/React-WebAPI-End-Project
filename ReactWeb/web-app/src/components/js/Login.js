@@ -77,6 +77,7 @@ const SliderLogin = () => {
       try {
         axios.get("http://localhost:61334/Sold/1").then((res) => {
           setveri(res.data);
+          console.log(res.data);
         });
       } catch (error) {
       } finally {
@@ -87,7 +88,13 @@ const SliderLogin = () => {
       fetchData();
     }
   });
-
+const detay = async (seciliCarid) => {
+  console.log(seciliCarid);
+  localStorage.setItem("gelencar", seciliCarid);
+  localStorage.setItem("login", "1");
+  localStorage.setItem("token","");
+  navigate("/CarDetail");
+}
   return (
     <div>
       <h3 >
@@ -103,11 +110,12 @@ const SliderLogin = () => {
           <div className="prev" onClick={prev}></div>
           <div className="slide-panel" ref={imageContainerRef}>
             {Ver.map((image) => {
-              return (
+              return (                 
                 <img
                   src={image.img}
                   height={250}
                   title={image.carName + " " + image.carModelName}
+                  onClick={(e) => detay(image.idMore)}
                 />
               );
             })}

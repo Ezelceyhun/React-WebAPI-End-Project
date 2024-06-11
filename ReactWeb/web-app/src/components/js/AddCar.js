@@ -48,7 +48,13 @@ const AddCar = () => {
     seciliusername,
     seciliusermail,
     seciliuserpass,
-    seciliusercartotal
+    seciliusercartotal,
+    secilimodelyears,
+    secilitotalkm,
+    secilifuel,
+    secilishift,
+    secilienginehp,
+    secilicarcolor
   ) => {
     //e.preventDefault();
     let aracid = secilicarid;
@@ -76,6 +82,12 @@ const AddCar = () => {
           ownerUserId: ownerid,
           img: carpicture,
           userBuy: selluserid,
+          modelYears: secilimodelyears,
+          totalKm: secilitotalkm,
+          fuel: secilifuel,
+          shift: secilishift,
+          engineHp: secilienginehp,
+          carColor: secilicarcolor,
           customerUser: {
             id: ownerid,
             name: cname,
@@ -139,7 +151,13 @@ const AddCar = () => {
                     cars.customerUser.name,
                     cars.customerUser.email,
                     cars.customerUser.password,
-                    cars.customerUser.totalCarUnsold
+                    cars.customerUser.totalCarUnsold,
+                    cars.modelYears,
+                    cars.totalKm,
+                    cars.fuel,
+                    cars.shift,
+                    cars.engineHp,
+                    cars.carColor
                   )
                 }
               >

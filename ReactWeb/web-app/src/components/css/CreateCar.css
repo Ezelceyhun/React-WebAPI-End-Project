@@ -1,6 +1,17 @@
 .kutuCarCreate
 {   
     margin-top: 8px;
+    margin-left: 10px;
+    float: left;
+}
+.kutuCarCreateLabel{
+    margin-top: 50px;
+    margin-left: 10px;
+    clear: both;
+}
+.kutuCarCreateButton
+{
+    margin: auto;
 }
 .kutuCarCreate input
 {
@@ -19,8 +30,8 @@
     margin-top: 10px;
     border-radius: 10px;
     background-color: lightgrey;
-    height:270px;
-    width: 430px;
+    height:360px;
+    width: 530px;
     margin: auto;
 }
 .uyariLabel

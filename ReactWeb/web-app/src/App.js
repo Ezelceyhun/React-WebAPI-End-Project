@@ -11,6 +11,8 @@ import AddCar from './components/js/AddCar';
 import CreateCar from './components/js/CreateCar';
 import Sales from './components/js/Sales';
 import OldSales from './components/js/OldSales';
+import CarDetail from './components/js/CarDetail';
+import Datagrid from './components/js/Datagrid';
 
 function App(){
 
@@ -29,6 +31,8 @@ return(
         <Route path='CreateCar' element={<CreateCar/>}/>        
         <Route path='Sales' element={<Sales/>}/>
         <Route path='OldSales' element={<OldSales/>}/>
+        <Route path='CarDetail' element={<CarDetail/>}/>
+        <Route path='Datagrid' element={<Datagrid/>}/>
       </Routes>
       </BrowserRouter>  
       <footer className='footer'>

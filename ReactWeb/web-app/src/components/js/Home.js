@@ -3,13 +3,14 @@ import axios from "axios";
 import "../css/Home.css";
 import { useLocation, useNavigate } from "react-router-dom";
 import { jwtDecode } from "jwt-decode";
+import DataTable from "react-data-table-component";
 
 function LoginMain() {
   // Anlık Tarih
   const bugun = new Date();
-  
+
   const navigate = useNavigate();
-  
+
   const location = useLocation();
 
   const navigateCar = useNavigate();
@@ -17,7 +18,7 @@ function LoginMain() {
   const [Ver, setVeri] = useState([]);
 
   const [userVer, setuserVer] = useState([]);
- 
+
   const [isLoading, setIsLoading] = useState(true);
 
   // Local de tutulan Token'ı Decode Edip Bilgilerini Kullanma
@@ -32,7 +33,7 @@ function LoginMain() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        axios
+        const respo = await axios
           .post(
             "http://localhost:61334/login/" +
               localSmail +
@@ -56,12 +57,136 @@ function LoginMain() {
     }
   }, [isLoading]);
 
+  const columns = [
+    {
+      name: "Araç Resmi",
+      selector: (row) => (
+        <img
+          src={row.img}
+          height={60}
+          width={60}
+          onClick={(e) => detay(row.idMore)}
+        />
+      ),
+      sortable: true,
+    },
+    {
+      name: "Araç Adı",
+      selector: (row) => row.carName,
+      sortable: true,
+    },
+    {
+      name: "Araç Model",
+      selector: (row) => row.carModelName,
+      sortable: true,
+    },
+    {
+      name: "Model Yılı",
+      selector: (row) => row.modelYears,
+      sortable: true,
+    },
+    {
+      name: "Total KM",
+      selector: (row) => row.totalKm,
+      sortable: true,
+    },
+    {
+      name: "Yakıt Türü",
+      selector: (row) => row.fuel,
+      sortable: true,
+    },
+    {
+      name: "Vites",
+      selector: (row) => row.shift,
+      sortable: true,
+    },
+    {
+      name: "Motor Gücü",
+      selector: (row) => row.engineHp,
+      sortable: true,
+    },
+    {
+      name: "Araç Rengi",
+      selector: (row) => row.carColor,
+      sortable: true,
+    },
+    {
+      name: "Fiyat",
+      selector: (row) => row.price + " ₺",
+      sortable: true,
+    },
+    {
+      name: "Son Güncelleme Tarihi",
+      selector: (row) => row.lastDateTime,
+      sortable: true,
+    },
+    {
+      name: "Action",
+      selector: (row) =>
+        row.sold === 0 ? (
+          <form onSubmit={handleSatButton}>
+            <button
+              className="NotPriceColor"
+              type="submit"
+              onClick={(e) =>
+                handleSatButton(
+                  row.idMore,
+                  row.carName,
+                  row.price,
+                  row.carModelName,
+                  row.fuel,
+                  row.shift,
+                  row.totalKm,
+                  row.carColor,
+                  row.engineHp,
+                  row.modelYears,
+                  row.customerUser.id,
+                  row.customerUser.name,
+                  row.customerUser.email,
+                  row.customerUser.password,
+                  row.customerUser.totalCarUnsold,
+                  row.img,
+                  e
+                )
+              }
+            >
+              Satışa Çıkart
+            </button>
+          </form>
+        ) : (
+          <label className="PriceColor">Satışta</label>
+        ),
+      sortable: true,
+    },
+    {
+      name: "Update",
+      selector: (row) => (
+        <form name="formCar" onSubmit={handleSubmitCarUpdate}>
+          <button
+            className="updateCarbutton"
+            type="submit"
+            onClick={(e) => handleSubmitCarUpdate(row.idMore, e)}
+          >
+            Güncelle
+          </button>
+        </form>
+      ),
+      sortable: true,
+    },
+  ];
+
   // Satışa Çıkar Axios'u
   const handleSatButton = async (
     selectedId,
     selectedName,
     selectedPrice,
     selectedModel,
+    selectedFuel,
+    selectedShift,
+    selectedTotalKm,
+    selectedCarColor,
+    selectedEngineHp,
+    selectedModelYears,
     userid,
     username,
     usermail,
@@ -85,6 +210,13 @@ function LoginMain() {
           carModelName: selectedModel,
           ownerUserId: userid,
           img: selectedimg,
+          userBuy: userid,
+          modelYears: selectedModelYears,
+          totalKm: selectedTotalKm,
+          fuel: selectedFuel,
+          shift: selectedShift,
+          engineHp: selectedEngineHp,
+          carColor: selectedCarColor,
           customerUser: {
             id: userid,
             name: username,
@@ -101,7 +233,7 @@ function LoginMain() {
     } catch (error) {}
   };
 
-  // Kullanıcıyı Güncelleme Construction 
+  // Kullanıcıyı Güncelleme Construction
   const handleSubmitUpdate = async (id) => {
     //e yerine id gelicekmiş
     navigate("/UpdateUsers", { state: { gelenId: id } });
@@ -171,6 +303,11 @@ function LoginMain() {
     navigate("/OldSales");
   };
 
+  const detay = async (seciliCarid) => {
+    console.log(seciliCarid);
+    localStorage.setItem("gelencar", seciliCarid);
+    navigate("/CarDetail");
+  };
   return (
     <div>
       <div className="sayfaBaslik">
@@ -255,76 +392,20 @@ function LoginMain() {
           )}
         </table>
       </div>
-      <br />
+      
+      <div className="dataclass">
+        {isLoading ? (
+          <p>Loading...</p>
+        ) : (
+          <DataTable            
+            title="Sahip Olunan Araçlar"
+            columns={columns}
+            data={Ver}
+            pagination
+          />
+        )}
 
-      <div className="tableClass">
-        <table border={1} className="Table" align="center">
-          <tr>
-            <th>ARAÇ ID</th>
-            <th>ARAÇ RESİM</th>
-            <th>ARAÇ ADI</th>
-            <th>ARAÇ MODEL</th>
-            <th>FİYAT</th>
-            <th>SON EKLENME TARİHİ</th>
-            <th>SATILDI/SATILMADI</th>
-            <th>GÜNCELLE</th>
-          </tr>
-
-          {Ver.map((Ver) => (
-            <tr>
-              <td key={Ver.idMore}>{Ver.idMore}</td>
-
-              <td>
-                <img src={Ver.img} height={90} width={90} />
-              </td>
-
-              <td>{Ver.carName}</td>
-              <td>{Ver.carModelName}</td>
-              <td>{Ver.price} ₺</td>
-              <td>{Ver.lastDateTime}</td>
-              <td>
-                {Ver.sold === 0 ? (
-                  <form onSubmit={handleSatButton}>
-                    <button
-                      className="NotPriceColor"
-                      type="submit"
-                      onClick={(e) =>
-                        handleSatButton(
-                          Ver.idMore,
-                          Ver.carName,
-                          Ver.price,
-                          Ver.carModelName,
-                          Ver.customerUser.id,
-                          Ver.customerUser.name,
-                          Ver.customerUser.email,
-                          Ver.customerUser.password,
-                          Ver.customerUser.totalCarUnsold,
-                          Ver.img,
-                          e
-                        )
-                      }
-                    >
-                      Satışa Çıkart
-                    </button>
-                  </form>
-                ) : (
-                  <label className="PriceColor">Satışta</label>
-                )}
-              </td>
-              <td>
-                <form name="formCar" onSubmit={handleSubmitCarUpdate}>
-                  <button
-                    className="updateCarbutton"
-                    type="submit"
-                    onClick={(e) => handleSubmitCarUpdate(Ver.idMore, e)}
-                  >
-                    Güncelle
-                  </button>
-                </form>
-              </td>
-            </tr>
-          ))}
-        </table>
+        <br />
       </div>
     </div>
   );

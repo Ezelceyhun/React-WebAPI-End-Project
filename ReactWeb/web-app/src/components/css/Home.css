@@ -30,9 +30,8 @@
 {
     color:wheat;
     height: 50px;
-    width: 100px;
-    font-size: 21px;
-    font-weight: bold;
+    width: 86px;
+    font-size: 13px;
     border: 0px;
     background-color: #21A7D7;
     border-radius: 10px;
@@ -79,8 +78,8 @@
 }
 .updateCarbutton
 {
-    width: 100px;
-    height: 42px;
+    width: 70px;
+    height: 50px;
     border-radius: 10px;
     color: whitesmoke;
     background-color: #21A7D7;
@@ -154,4 +153,8 @@
     margin-bottom: 100px;
     padding-top: 10px;
     padding-bottom: 10px;
+}
+.dataclass
+{
+    margin: auto;
 }
