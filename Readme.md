@@ -13,7 +13,7 @@ Yeni Kullanıcı Oluşturduğunuzda Şifreniz SHA256 Şifrelemen Fonksiyonu İle
 Login Olunduğunda Karşılık Olarak Bir Token Oluşturur. Bu Sayede Oturum Açılır ve Sayfalar Arası Gezinti Yapılabilir.
 
 Frontend Tarafında React Kullanılmıştır.
-
+ 
 Tüm API Bağlantıları AXIOS İle Yapılmıştır.
 
 Üye Girişi Yapıldığında Bilgileriniz LocalStorage'de Token Olarak Tutulur. Yine Bir Güvenlik Önlemi Olarak Eklenmiştir.
