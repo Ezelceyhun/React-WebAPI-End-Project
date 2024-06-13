@@ -157,4 +157,7 @@
 .dataclass
 {
     margin: auto;
+    text-align: center;
+    background-image: linear-gradient(#F5F5F7,whitesmoke, );
+    
 }

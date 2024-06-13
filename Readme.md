@@ -26,7 +26,7 @@ Kullanıcıya Yeni Araç Eklendiğinde / Satıldığında Geçmiş Satışlar Ta
 
 Satışa Çıkartılan Araçlar Stoktan Düşer. Satış İptali Olursa Stok Güncellenir.
 
-Home Sayfasında Araçlar Table yerine DataTable İle Değiştirilmiştir. Bu Sayede Sıralama Yapılabilmektedir.
+Home Sayfasında Araçlar Table yerine DataGrid İle Değiştirilmiştir. Bu Sayede Sıralama Yapılabilmektedir.
 
 Veritabanı Tarafında SQL Server Kullanılmıştır. Veritabanı Projeye Dahil Edilmiştir. Veritabanında Migration Yapısı Kullanılmıştır. Birbirleri İle İlişkili Tablolardır. Değişiklik Yapılmasına İzin Verilmez.
 
@@ -62,7 +62,7 @@ When a New Vehicle is Added/Sold to the User, it is Added to the Past Sales Tabl
 
 Vehicles put on sale are removed from stock. If a sale is cancelled, the stock is updated.
 
-On the Home Page, Tools have been replaced with DataTable instead of Table. In this way, sorting can be done.
+On the Home Page, Tools have been replaced with DataGrid instead of Table. In this way, sorting can be done.
 
 SQL Server is Used on the Database Side. Database is Included in the Project. Migration Structure is Used in the Database. These are tables that are related to each other. No Changes Allowed.
 

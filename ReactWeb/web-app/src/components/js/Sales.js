@@ -95,7 +95,17 @@ const Sales = () => {
           },
         })
         .then((carresponse) => {
-          historySell(idMore, picture, carName, carModelName, price);
+          historySell(idMore,
+            picture,
+            carName,
+            carModelName,
+            price,
+            modelyears,
+            totalkm,
+            fuel,
+            shift,
+            enginehp,
+            carcolor);
         })
         .catch((error) => {});
     } catch (error) {}

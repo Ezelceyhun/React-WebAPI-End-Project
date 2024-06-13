@@ -12,7 +12,7 @@ import CreateCar from './components/js/CreateCar';
 import Sales from './components/js/Sales';
 import OldSales from './components/js/OldSales';
 import CarDetail from './components/js/CarDetail';
-import Datagrid from './components/js/Datagrid';
+import DataGridTable from './components/js/DataGridTable';
 
 function App(){
 
@@ -32,7 +32,7 @@ return(
         <Route path='Sales' element={<Sales/>}/>
         <Route path='OldSales' element={<OldSales/>}/>
         <Route path='CarDetail' element={<CarDetail/>}/>
-        <Route path='Datagrid' element={<Datagrid/>}/>
+        <Route path='DataGridTable' element={<DataGridTable/>}/>
       </Routes>
       </BrowserRouter>  
       <footer className='footer'>

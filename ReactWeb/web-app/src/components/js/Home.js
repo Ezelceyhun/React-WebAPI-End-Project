@@ -3,7 +3,8 @@ import axios from "axios";
 import "../css/Home.css";
 import { useLocation, useNavigate } from "react-router-dom";
 import { jwtDecode } from "jwt-decode";
-import DataTable from "react-data-table-component";
+//import DataTable from "react-data-table-component";
+import { DataGrid, GridRowsProp, GridColDef } from "@mui/x-data-grid";
 
 function LoginMain() {
   // Anlık Tarih
@@ -57,125 +58,151 @@ function LoginMain() {
     }
   }, [isLoading]);
 
-  const columns = [
-    {
-      name: "Araç Resmi",
-      selector: (row) => (
-        <img
-          src={row.img}
-          height={60}
-          width={60}
-          onClick={(e) => detay(row.idMore)}
-        />
-      ),
-      sortable: true,
-    },
-    {
-      name: "Araç Adı",
-      selector: (row) => row.carName,
-      sortable: true,
-    },
-    {
-      name: "Araç Model",
-      selector: (row) => row.carModelName,
-      sortable: true,
-    },
-    {
-      name: "Model Yılı",
-      selector: (row) => row.modelYears,
-      sortable: true,
-    },
-    {
-      name: "Total KM",
-      selector: (row) => row.totalKm,
-      sortable: true,
-    },
-    {
-      name: "Yakıt Türü",
-      selector: (row) => row.fuel,
-      sortable: true,
-    },
-    {
-      name: "Vites",
-      selector: (row) => row.shift,
-      sortable: true,
-    },
-    {
-      name: "Motor Gücü",
-      selector: (row) => row.engineHp,
-      sortable: true,
-    },
-    {
-      name: "Araç Rengi",
-      selector: (row) => row.carColor,
-      sortable: true,
-    },
-    {
-      name: "Fiyat",
-      selector: (row) => row.price + " ₺",
-      sortable: true,
-    },
-    {
-      name: "Son Güncelleme Tarihi",
-      selector: (row) => row.lastDateTime,
-      sortable: true,
-    },
-    {
-      name: "Action",
-      selector: (row) =>
-        row.sold === 0 ? (
-          <form onSubmit={handleSatButton}>
-            <button
-              className="NotPriceColor"
-              type="submit"
-              onClick={(e) =>
-                handleSatButton(
-                  row.idMore,
-                  row.carName,
-                  row.price,
-                  row.carModelName,
-                  row.fuel,
-                  row.shift,
-                  row.totalKm,
-                  row.carColor,
-                  row.engineHp,
-                  row.modelYears,
-                  row.customerUser.id,
-                  row.customerUser.name,
-                  row.customerUser.email,
-                  row.customerUser.password,
-                  row.customerUser.totalCarUnsold,
-                  row.img,
-                  e
-                )
-              }
-            >
-              Satışa Çıkart
-            </button>
-          </form>
-        ) : (
-          <label className="PriceColor">Satışta</label>
-        ),
-      sortable: true,
-    },
-    {
-      name: "Update",
-      selector: (row) => (
-        <form name="formCar" onSubmit={handleSubmitCarUpdate}>
-          <button
-            className="updateCarbutton"
-            type="submit"
-            onClick={(e) => handleSubmitCarUpdate(row.idMore, e)}
-          >
-            Güncelle
-          </button>
-        </form>
-      ),
-      sortable: true,
-    },
+  const rows: GridRowsProp = Ver.map((Ver, idMore) => ({
+    id: idMore,
+    col1: Ver.img,
+    col2: Ver.carName,
+    col3: Ver.carModelName,
+    col4: Ver.modelYears,
+    col5: Ver.totalKm,
+    col6: Ver.fuel,
+    col7: Ver.shift,
+    col8: Ver.engineHp,
+    col9: Ver.carColor,
+    col10: Ver.price,
+    col11: Ver.lastDateTime,
+    col12: Ver.sold,
+    col13: Ver.idMore,       
+    col14: Ver.customerUser.id,
+    col15: Ver.customerUser.name,
+    col16: Ver.customerUser.email,
+    col17: Ver.customerUser.password,
+    col18: Ver.customerUser.totalCarUnsold,
+    col19: Ver            
+  }));
+
+  const columns: GridColDef[] = [
+    { avatar: "col1", headerName: "ARAÇ RESMİ", width: 120, renderCell: (params) => (
+      <img
+        src={params.row.col1}
+        alt="Araç Resmi"
+        onClick={() => detay(params.row.col13)}
+        style={{ width: "100%", height: "auto" }}
+      /> ),},
+    { field: "col2", headerName: "MARKA", width: 90 },
+    { field: "col3", headerName: "MODEL", width: 90 },
+    { field: "col4", headerName: "MODEL YILI", width: 90 },
+    { field: "col5", headerName: "TOPLAM KM", width: 100 },
+    { field: "col6", headerName: "YAKIT", width: 80 },
+    { field: "col7", headerName: "VİTES", width: 80 },
+    { field: "col8", headerName: "MOTOR GÜCÜ", width: 110 },
+    { field: "col9", headerName: "ARAÇ RENGİ", width: 110 },
+    { field: "col10", headerName: "FİYAT", width: 80 },
+    { field: "col11", headerName: "SON GÜNCELLENME TARİHİ", width: 220 },
+    { field: "col12", headerName: "SATIŞ DURUMU", width: 120, renderCell: (params) => (
+      params.row.col12 === 0 ? (
+          <button onClick={(e) => handleSatButton(
+          params.row.col13,
+          params.row.col2,
+          params.row.col10,
+          params.row.col3,
+          params.row.col6,
+          params.row.col7,
+          params.row.col5,
+          params.row.col9,
+          params.row.col8,
+          params.row.col4,
+          params.row.col14,
+          params.row.col15,
+          params.row.col16,
+          params.row.col17,
+          params.row.col18,
+          params.row.col1,
+          e
+        )}>Satışa Çıkart</button>
+        
+      ) : (
+        <label className="PriceColor">Satışta</label>
+      )
+    ),},
+    { field: "col13", headerName: "GÜNCELLEME", width: 120, renderCell: (params) => (
+      <button onClick={(e) => handleSubmitCarUpdate(params.row.col13, e)}>
+        Güncelle
+      </button>
+    ),}
   ];
 
+  // Eski Datatable Kullanımı
+  // const columns = [
+  //   {
+  //     name: "Araç Resmi",
+  //     selector: (row) => (
+  //       <img
+  //         src={row.img}
+  //         height={60}
+  //         width={60}
+  //         onClick={(e) => detay(row.idMore)}
+  //       />
+  //     ),
+  //     sortable: true,
+  //   },
+  //   {
+  //     name: "Satış Durumu",
+  //     selector: (row) =>
+  //       row.sold === 0 ? (
+  //         <form onSubmit={handleSatButton}>
+  //           <button
+  //             className="NotPriceColor"
+  //             type="submit"
+  //             onClick={(e) =>
+  //               handleSatButton(
+  //                 row.idMore,
+  //                 row.carName,
+  //                 row.price,
+  //                 row.carModelName,
+  //                 row.fuel,
+  //                 row.shift,
+  //                 row.totalKm,
+  //                 row.carColor,
+  //                 row.engineHp,
+  //                 row.modelYears,
+  //                 row.customerUser.id,
+  //                 row.customerUser.name,
+  //                 row.customerUser.email,
+  //                 row.customerUser.password,
+  //                 row.customerUser.totalCarUnsold,
+  //                 row.img,
+  //                 e
+  //               )
+  //             }
+  //           >
+  //             Satışa Çıkart
+  //           </button>
+  //         </form>
+  //       ) : (
+  //         <label className="PriceColor">Satışta</label>
+  //       ),
+  //     sortable: true,
+  //   },
+  //   {
+  //     name: "Update",
+  //     selector: (row) => (
+  //       <form name="formCar" onSubmit={handleSubmitCarUpdate}>
+  //         <button
+  //           className="updateCarbutton"
+  //           type="submit"
+  //           onClick={(e) => handleSubmitCarUpdate(row.idMore, e)}
+  //         >
+  //           Güncelle
+  //         </button>
+  //       </form>
+  //     ),
+  //     sortable: true,
+  //   },
+  // ];
+
   // Satışa Çıkar Axios'u
+
   const handleSatButton = async (
     selectedId,
     selectedName,
@@ -243,7 +270,6 @@ function LoginMain() {
   const handleSubmitCarUpdate = async (CarId, event) => {
     //ilgili satırda ki id'yi çekmek için kullan
     event.preventDefault();
-
     localStorage.setItem("gelencarid", CarId);
     navigateCar("/UpdateCar");
   };
@@ -332,7 +358,6 @@ function LoginMain() {
           </div>
         </h1>
       </div>
-
       <div className="tableClass">
         <table border={1} className="Table" align="center">
           <tr>
@@ -392,19 +417,13 @@ function LoginMain() {
           )}
         </table>
       </div>
-      
       <div className="dataclass">
         {isLoading ? (
-          <p>Loading...</p>
+          <p>Yükleniyor...</p>
         ) : (
-          <DataTable            
-            title="Sahip Olunan Araçlar"
-            columns={columns}
-            data={Ver}
-            pagination
-          />
+          <DataGrid rows={rows} columns={columns} getRowHeight={() => 'auto'} />
+          // <DataTable title="Sahip Olunan Araçlar" columns={columns} data={Ver} pagination/>
         )}
-
         <br />
       </div>
     </div>

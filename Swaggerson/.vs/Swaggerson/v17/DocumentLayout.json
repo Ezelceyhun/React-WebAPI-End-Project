@@ -3,17 +3,14 @@
   "WorkspaceRootPath": "C:\\Users\\ezelc\\Desktop\\ASPNETswagger\\Swaggerson\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2621FC25-ED1E-4080-98E9-AC8AB6D7A4B1}|..\\UserEntities2\\UserEntities2.csproj|c:\\users\\ezelc\\desktop\\aspnetswagger\\userentities2\\usersoldsales.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A4541099-85BC-46CD-B8E8-0CD1E1547396}|Swaggerson.csproj|c:\\users\\ezelc\\desktop\\aspnetswagger\\swaggerson\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A4541099-85BC-46CD-B8E8-0CD1E1547396}|Swaggerson.csproj|solutionrelative:controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0A4C6666-F9E6-4608-B98E-CD443566CA9C}|..\\CustomerUserDataAccess2\\CustomerUserDataAccess2.csproj|c:\\users\\ezelc\\desktop\\aspnetswagger\\customeruserdataaccess2\\concrete\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FCAA4ED0-954B-48EF-9411-F5FC799AC649}|..\\CustomerUserBusiness2\\CustomerUserBusiness2.csproj|c:\\users\\ezelc\\desktop\\aspnetswagger\\customeruserbusiness2\\abstract\\customeruserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FCAA4ED0-954B-48EF-9411-F5FC799AC649}|..\\CustomerUserBusiness2\\CustomerUserBusiness2.csproj|c:\\users\\ezelc\\desktop\\aspnetswagger\\customeruserbusiness2\\abstract\\customeruserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0A4C6666-F9E6-4608-B98E-CD443566CA9C}|..\\CustomerUserDataAccess2\\CustomerUserDataAccess2.csproj|c:\\users\\ezelc\\desktop\\aspnetswagger\\customeruserdataaccess2\\concrete\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -23,7 +20,7 @@
       "DocumentGroups": [
         {
           "DockedHeight": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -35,29 +32,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "UserSoldSales.cs",
-              "DocumentMoniker": "C:\\Users\\ezelc\\Desktop\\ASPNETswagger\\UserEntities2\\UserSoldSales.cs",
-              "RelativeDocumentMoniker": "..\\UserEntities2\\UserSoldSales.cs",
-              "ToolTip": "C:\\Users\\ezelc\\Desktop\\ASPNETswagger\\UserEntities2\\UserSoldSales.cs",
-              "RelativeToolTip": "..\\UserEntities2\\UserSoldSales.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAABoAAAAtAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-11T11:08:19.873Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "CustomerUserService.cs",
               "DocumentMoniker": "C:\\Users\\ezelc\\Desktop\\ASPNETswagger\\CustomerUserBusiness2\\Abstract\\CustomerUserService.cs",
               "RelativeDocumentMoniker": "..\\CustomerUserBusiness2\\Abstract\\CustomerUserService.cs",
               "ToolTip": "C:\\Users\\ezelc\\Desktop\\ASPNETswagger\\CustomerUserBusiness2\\Abstract\\CustomerUserService.cs",
               "RelativeToolTip": "..\\CustomerUserBusiness2\\Abstract\\CustomerUserService.cs",
-              "ViewState": "AQIAAA4AAAAAAAAAAAAswA4BAABDAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcBAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-05T10:35:07.672Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-05T10:35:07.672Z"
             },
             {
               "$type": "Document",
@@ -67,20 +50,19 @@
               "RelativeDocumentMoniker": "..\\CustomerUserDataAccess2\\Concrete\\UserRepository.cs",
               "ToolTip": "C:\\Users\\ezelc\\Desktop\\ASPNETswagger\\CustomerUserDataAccess2\\Concrete\\UserRepository.cs",
               "RelativeToolTip": "..\\CustomerUserDataAccess2\\Concrete\\UserRepository.cs",
-              "ViewState": "AQIAAFQAAAAAAAAAAAAcwJwAAAAUAAAA",
+              "ViewState": "AQIAAKkAAAAAAAAAAAAIwJMAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-05T08:16:38.396Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-05T08:16:38.396Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "UserController.cs",
               "DocumentMoniker": "C:\\Users\\ezelc\\Desktop\\ASPNETswagger\\Swaggerson\\Controllers\\UserController.cs",
               "RelativeDocumentMoniker": "Controllers\\UserController.cs",
               "ToolTip": "C:\\Users\\ezelc\\Desktop\\ASPNETswagger\\Swaggerson\\Controllers\\UserController.cs",
               "RelativeToolTip": "Controllers\\UserController.cs",
-              "ViewState": "AQIAAB4BAAAAAAAAAAAiwGMBAABPAAAA",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAMcAAAA2AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-03T12:41:20.319Z",
               "EditorCaption": ""
